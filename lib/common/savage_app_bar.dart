@@ -17,6 +17,7 @@ class SavageAppBar extends StatelessWidget {
         right: _marginRight,
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text(
             Strings.appName,
