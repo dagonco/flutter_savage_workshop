@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:savage/common/savage_app_bar.dart';
 import 'package:savage/resources/images.dart';
@@ -38,9 +39,13 @@ class LandingScreen extends StatelessWidget {
                       style: TextStyles.bodyTextStyle,
                     ),
                     SizedBox(height: _secondMargin),
-                    Text(
-                      Strings.startEnjoying,
-                      style: TextStyles.buttonTextStyle,
+                    CupertinoButton(
+                      padding: EdgeInsets.all(0),
+                      child: Text(
+                        Strings.startEnjoying,
+                        style: TextStyles.buttonTextStyle,
+                      ),
+                      onPressed: () {},
                     ),
                   ],
                 ),
