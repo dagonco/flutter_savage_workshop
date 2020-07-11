@@ -39,13 +39,16 @@ class LandingScreen extends StatelessWidget {
                       style: TextStyles.bodyTextStyle,
                     ),
                     SizedBox(height: _secondMargin),
-                    CupertinoButton(
-                      padding: EdgeInsets.all(0),
-                      child: Text(
-                        Strings.startEnjoying,
-                        style: TextStyles.buttonTextStyle,
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: CupertinoButton(
+                        padding: EdgeInsets.all(0),
+                        child: Text(
+                          Strings.startEnjoying,
+                          style: TextStyles.buttonTextStyle,
+                        ),
+                        onPressed: () {},
                       ),
-                      onPressed: () {},
                     ),
                   ],
                 ),
