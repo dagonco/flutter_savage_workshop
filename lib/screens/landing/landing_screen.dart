@@ -32,10 +32,12 @@ class LandingScreen extends StatelessWidget {
                       Strings.readyToWatch,
                       style: TextStyles.bigHeadingTextStyle,
                     ),
+                    SizedBox(height: _firstMargin),
                     Text(
                       Strings.readyToWatchDescription,
                       style: TextStyles.bodyTextStyle,
                     ),
+                    SizedBox(height: _secondMargin),
                     Text(
                       Strings.startEnjoying,
                       style: TextStyles.buttonTextStyle,
