@@ -10,6 +10,12 @@ class SavageAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: double.infinity,
+      padding: EdgeInsets.only(
+        left: _marginLeft,
+        top: _marginTop,
+        right: _marginRight,
+      ),
       child: Column(
         children: <Widget>[
           Text(
