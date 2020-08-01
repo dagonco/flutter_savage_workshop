@@ -40,14 +40,17 @@ class DashboardScreen extends StatelessWidget {
           FractionallySizedBox(
             alignment: Alignment.bottomCenter,
             heightFactor: 0.65,
-            child: Container(
-              color: Color(ColorPallete.backgroundColor),
-              child: SingleChildScrollView(
-                child: Column(
-                  children: <Widget>[
-                    ExperiencesScrollView(),
-                    QuickCategoriesContainer(),
-                  ],
+            child: ClipRRect(
+              borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+              child: Container(
+                color: Color(ColorPallete.backgroundColor),
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: <Widget>[
+                      ExperiencesScrollView(),
+                      QuickCategoriesContainer(),
+                    ],
+                  ),
                 ),
               ),
             ),
