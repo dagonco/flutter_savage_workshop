@@ -34,17 +34,21 @@ class SubscriptionContainer extends StatelessWidget {
               ),
             ),
           ),
-          Row(
-            children: <Widget>[
-              Text(
-                text,
-                style: TextStyles.subscriptionTextStyle,
-              ),
-              Text(
-                "$amount €",
-                style: TextStyles.subscriptionAmountTextStyle,
-              ),
-            ],
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 32.0),
+            child: Row(
+              children: <Widget>[
+                Text(
+                  text,
+                  style: TextStyles.subscriptionTextStyle,
+                ),
+                Spacer(),
+                Text(
+                  "$amount €",
+                  style: TextStyles.subscriptionAmountTextStyle,
+                ),
+              ],
+            ),
           ),
         ],
       ),
