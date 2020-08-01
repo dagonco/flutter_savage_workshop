@@ -19,16 +19,19 @@ class SubscriptionContainer extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: 8.0),
       child: Stack(
         children: <Widget>[
-          ColorFiltered(
-            colorFilter: ColorFilter.mode(
-              Colors.black.withOpacity(0.3),
-              BlendMode.srcATop,
-            ),
-            child: Image.asset(
-              imagePath,
-              height: height * 0.6 / 4,
-              width: width,
-              fit: BoxFit.fitWidth,
+          ClipRRect(
+            borderRadius: BorderRadius.circular(8),
+            child: ColorFiltered(
+              colorFilter: ColorFilter.mode(
+                Colors.black.withOpacity(0.3),
+                BlendMode.srcATop,
+              ),
+              child: Image.asset(
+                imagePath,
+                height: height * 0.6 / 4,
+                width: width,
+                fit: BoxFit.fitWidth,
+              ),
             ),
           ),
           Row(
