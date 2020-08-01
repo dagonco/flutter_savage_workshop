@@ -23,7 +23,9 @@ class ExperiencesScrollViewItem extends StatelessWidget {
             borderRadius: BorderRadius.circular(8),
             child: Image.asset(
               image,
+              height: MediaQuery.of(context).size.width * 0.5,
               width: MediaQuery.of(context).size.width * 0.5,
+              fit: BoxFit.cover
             ),
           ),
           SizedBox(height: 8),
