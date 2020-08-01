@@ -14,26 +14,29 @@ class ExperiencesScrollView extends StatelessWidget {
           Strings.relatedToYou,
           style: TextStyles.buttonTextStyle,
         ),
-        Row(
-          children: <Widget>[
-            ExperiencesScrollViewItem(
-              image: Images.tiger,
-              title: Strings.lifeWithATiger,
-              description: Strings.loremIpsum,
-            ),
-            SizedBox(width: 24),
-            ExperiencesScrollViewItem(
-              image: Images.wildAnimals,
-              title: Strings.wildAnimals,
-              description: Strings.loremIpsum,
-            ),
-            SizedBox(width: 24),
-            ExperiencesScrollViewItem(
-              image: Images.rhinoceros,
-              title: Strings.feelIt,
-              description: Strings.loremIpsum,
-            )
-          ],
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: <Widget>[
+              ExperiencesScrollViewItem(
+                image: Images.tiger,
+                title: Strings.lifeWithATiger,
+                description: Strings.loremIpsum,
+              ),
+              SizedBox(width: 24),
+              ExperiencesScrollViewItem(
+                image: Images.wildAnimals,
+                title: Strings.wildAnimals,
+                description: Strings.loremIpsum,
+              ),
+              SizedBox(width: 24),
+              ExperiencesScrollViewItem(
+                image: Images.rhinoceros,
+                title: Strings.feelIt,
+                description: Strings.loremIpsum,
+              )
+            ],
+          ),
         ),
       ],
     );
