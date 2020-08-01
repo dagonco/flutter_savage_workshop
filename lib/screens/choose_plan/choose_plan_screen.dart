@@ -6,6 +6,7 @@ import 'package:savage/resources/images.dart';
 import 'package:savage/resources/strings.dart';
 import 'package:savage/resources/text_styles.dart';
 import 'package:savage/screens/choose_plan/subscription_container.dart';
+import 'package:savage/utils/navigator_helper.dart';
 
 class ChoosePlanScreen extends StatelessWidget {
   @override
@@ -58,7 +59,9 @@ class ChoosePlanScreen extends StatelessWidget {
                           Strings.lastStepToEnjoy,
                           style: TextStyles.buttonTextStyle,
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          NavigatorHelper.navigateDashboardScreen(context);
+                        },
                       ),
                     ),
                   ],
