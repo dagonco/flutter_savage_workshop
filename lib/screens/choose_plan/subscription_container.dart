@@ -15,27 +15,30 @@ class SubscriptionContainer extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final height = MediaQuery.of(context).size.height;
 
-    return Stack(
-      children: <Widget>[
-        Image.asset(
-          imagePath,
-          height: height * 0.6 / 4,
-          width: width,
-          fit: BoxFit.fitWidth,
-        ),
-        Row(
-          children: <Widget>[
-            Text(
-              text,
-              style: TextStyles.subscriptionTextStyle,
-            ),
-            Text(
-              "$amount €",
-              style: TextStyles.subscriptionAmountTextStyle,
-            ),
-          ],
-        ),
-      ],
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: 8.0),
+      child: Stack(
+        children: <Widget>[
+          Image.asset(
+            imagePath,
+            height: height * 0.6 / 4,
+            width: width,
+            fit: BoxFit.fitWidth,
+          ),
+          Row(
+            children: <Widget>[
+              Text(
+                text,
+                style: TextStyles.subscriptionTextStyle,
+              ),
+              Text(
+                "$amount €",
+                style: TextStyles.subscriptionAmountTextStyle,
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
