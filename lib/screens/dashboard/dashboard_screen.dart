@@ -42,11 +42,13 @@ class DashboardScreen extends StatelessWidget {
             heightFactor: 0.65,
             child: Container(
               color: Color(ColorPallete.backgroundColor),
-              child: Column(
-                children: <Widget>[
-                  ExperiencesScrollView(),
-                  QuickCategoriesContainer(),
-                ],
+              child: SingleChildScrollView(
+                child: Column(
+                  children: <Widget>[
+                    ExperiencesScrollView(),
+                    QuickCategoriesContainer(),
+                  ],
+                ),
               ),
             ),
           ),
