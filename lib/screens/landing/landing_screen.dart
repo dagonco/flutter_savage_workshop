@@ -4,6 +4,7 @@ import 'package:savage/common/savage_app_bar.dart';
 import 'package:savage/resources/images.dart';
 import 'package:savage/resources/strings.dart';
 import 'package:savage/resources/text_styles.dart';
+import 'package:savage/utils/navigator_helper.dart';
 
 class LandingScreen extends StatelessWidget {
   final double _firstMargin = 16;
@@ -47,7 +48,9 @@ class LandingScreen extends StatelessWidget {
                           Strings.startEnjoying,
                           style: TextStyles.buttonTextStyle,
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          NavigatorHelper.navigateChoosePlanScreen(context);
+                        },
                       ),
                     ),
                   ],
