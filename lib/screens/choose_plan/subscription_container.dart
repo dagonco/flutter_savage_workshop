@@ -18,6 +18,7 @@ class SubscriptionContainer extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 8.0),
       child: Stack(
+        alignment: Alignment.center,
         children: <Widget>[
           ClipRRect(
             borderRadius: BorderRadius.circular(8),
