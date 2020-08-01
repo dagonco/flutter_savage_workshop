@@ -15,6 +15,7 @@ class ItemQuickCategories extends StatelessWidget {
         ClipRRect(
           borderRadius: BorderRadius.circular(8),
           child: Container(
+            padding: EdgeInsets.all(12),
             color: Color(ColorPallete.itemQuickCategoriesColor),
             child: Image.asset(
               image,
