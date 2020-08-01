@@ -17,6 +17,7 @@ class QuickCategoriesContainer extends StatelessWidget {
           ),
           SizedBox(height: 16),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               ItemQuickCategories(
                 image: Images.bear,
