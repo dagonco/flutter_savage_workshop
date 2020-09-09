@@ -1,16 +1,44 @@
-# savage
+<!-- PROJECT SHIELDS -->
+[![CC0-1.0 License][license-shield]][license-url]
 
-A new Flutter application.
+<!-- PROJECT LOGO -->
+<p align="center">
+    <a href="https://github.com/dagonco/flutter_savage_workshop">
+        <img src="readme/header-logo.png" alt="logo" width="80" height="80">
+    </a>
+    <h3 align="center">Savage</h3>
+    <p align="center">A app to learn the simplest Flutter widgets and how to use them.</p>
+    <br/>
+</p>
 
+
+<!-- ABOUT THE PROJECT -->
+## About the Project
+
+This project serves as a guide for me to carry out about 19 exercises to understand the operation of the different widgets, their properties and attributes.
+
+Distributed in 10 branches that starts from `step_0` from the creation of the project to `step_3_2` where we will end our workshop. In the `master` branch is where we will find the project fully resolved so that it can serve as a guide to solve any problem during an exercise.
+
+<!-- GETTING STARTED -->
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Installation
 
-A few resources to get you started if this is your first Flutter project:
+1. Clone the repo
+```
+git clone git@github.com:dagonco/flutter_savage_workshop.git
+```
+2. Start from step_0
+```
+git checkout step_0
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<!-- LICENSE -->
+## License
+
+Distributed under the CC0-1.0 License. See `LICENSE` for more information.
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[license-shield]: https://img.shields.io/github/license/dagonco/flutter_savage_workshop
+[license-url]: https://github.com/dagonco/flutter_savage_workshop/blob/master/LICENSE
